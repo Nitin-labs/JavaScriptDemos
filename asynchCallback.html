@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>   
+        function notifyAll(fnSms, fnEmail) {   
+           setTimeout(function() {   
+              console.log('starting notification process');
+              document.write('starting notification process<br>')   
+              fnSms();   
+              fnEmail();   
+           }, 2000);   
+        }   
+        notifyAll(function() {   
+           console.log("Sms send .."); 
+           document.write("Sms send ..<br>")  
+        },  
+        function() {   
+           console.log("email send ..");  
+           document.write("email send ..<br>")
+
+        });   
+        console.log("End of script"); //executes first or not blocked by others   
+        document.write("End of script<br>")
+     </script>
+</body>
+</html>

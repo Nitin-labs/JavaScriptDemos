@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var keepHisword;
+    keepHisword=true
+    promise1=new Promise(function(resolve,reject){
+        if(keepHisword){
+            resolve(document.write("the man likes to keep his word"))
+        }else {
+            reject(document.write("the man doesn't want to keep his word"))
+        }
+    })
+    console.log(promise1)
+    document.write(promise1)
+    </script>
+</body>
+</html>

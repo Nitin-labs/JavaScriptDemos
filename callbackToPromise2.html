@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      
+  function processUserInput() {
+      console.log('inside function')
+    var name = prompt('Please enter your name.');
+    return new Promise((resolve,reject)=>{
+        resolve(name);
+    })
+
+  }
+  
+  processUserInput()
+  .then(name=>{
+    console.log('inside then')  
+    alert('Hello ' + name)
+  })
+
+    </script>
+</body>
+</html>
