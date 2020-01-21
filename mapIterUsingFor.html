@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const langMap=new Map()
+    langMap.set('C',"Dennis Ritchie")
+    langMap.set('cpp','Bjarne Stroustrup')
+    langMap.set('java',"James Gosling")
+    langMap.set('python',"Guido van Rossum")
+    langMap.set('perl',"Larry Wall")
+
+    for(const entry of langMap){
+        document.write(entry+"<br>")
+    }
+
+    for(const [key, value] of langMap){
+        document.write(`${key} : ${value}`+"<br>")
+    }
+    </script>
+</body>
+</html>
