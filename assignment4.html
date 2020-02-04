@@ -11,8 +11,12 @@
         var U1={name:"user1", age: 28, height:5.6}
        var U2={name:"user2", age: 25, height:5}
        var U3={name:"user3", age: 28, height:6}
-       var userCityMap=new Map([[U1,"city1"],[U2,"city2"],[U3,"city3"]])
+       U1.city="Mumbai"
+       U2.city="Pune"
+       U3.city="JAkarta"
+      // var userCityMap=new Map([[U1,"city1"],[U2,"city2"],[U3,"city3"]])
+       var userCityMap=new Map([[U1,U1.city],[U2,U2.city],[U3,U3.city]])
        console.log(userCityMap)
-           </script>
+     </script>
 </body>
 </html>
